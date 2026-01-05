@@ -2,7 +2,7 @@
 
 ## 🇬🇧 English
 
-Welcome to the **VETPET** repository! This is a web application designed for a veterinary clinic, built to showcase services, facilities, and provide information to pet owners.
+Welcome to the **VETPET** repository! This is a web application designed for my dad's veterinary clinic, built to showcase services, facilities, and provide information to pet owners.
 
 ### Project Structure
 
