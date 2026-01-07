@@ -2,7 +2,6 @@ import InteractiveBentoGallery, { MediaItemType } from './ui/interactive-bento-g
 import { Instagram, Facebook } from 'lucide-react';
 
 // Import local assets from showcases
-// ... (rest of imports remain same)
 import img1 from '../assets/showcases/1.JPG';
 import img2 from '../assets/showcases/2.JPG';
 import img3 from '../assets/showcases/3.JPG';
@@ -12,7 +11,6 @@ import vid6 from '../assets/showcases/6.mp4';
 import img7 from '../assets/showcases/7.JPG';
 
 const mediaItems: MediaItemType[] = [
-  // ... (mediaItems content remains same)
   {
     id: 1,
     type: "image",
