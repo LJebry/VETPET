@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect, useRef, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { X } from 'lucide-react';
+import { X, Volume2, VolumeX } from 'lucide-react';
 
 
 // MediaItemType defines the structure of a media item
@@ -18,6 +18,7 @@ const MediaItem = ({ item, className, onClick, isModal = false }: { item: MediaI
     const videoRef = useRef<HTMLVideoElement>(null); // Reference for video element
     const [isInView, setIsInView] = useState(false); // To track if video is in the viewport
     const [isBuffering, setIsBuffering] = useState(true);  // To track if video is buffering
+    const [isMuted, setIsMuted] = useState(true);
 
     // Intersection Observer to detect if video is in view and play/pause accordingly
     useEffect(() => {
@@ -87,6 +88,15 @@ const MediaItem = ({ item, className, onClick, isModal = false }: { item: MediaI
         };
     }, [isInView]);
 
+    const toggleMute = (e: React.MouseEvent) => {
+        if (isModal) {
+            e.stopPropagation();
+            setIsMuted(!isMuted);
+        } else {
+            onClick?.();
+        }
+    };
+
     // Render either a video or image based on item.type
 
     if (item.type === 'video') {
@@ -95,9 +105,9 @@ const MediaItem = ({ item, className, onClick, isModal = false }: { item: MediaI
                 <video
                     ref={videoRef}
                     className="w-full h-full object-cover"
-                    onClick={onClick}
+                    onClick={toggleMute}
                     playsInline
-                    muted
+                    muted={isMuted}
                     loop
                     preload="auto"
                     style={{
@@ -112,6 +122,11 @@ const MediaItem = ({ item, className, onClick, isModal = false }: { item: MediaI
                 {isBuffering && (
                     <div className="absolute inset-0 flex items-center justify-center bg-black/10">
                         <div className="w-6 h-6 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                    </div>
+                )}
+                 {isModal && (
+                    <div className="absolute top-4 right-4 z-20 bg-black/50 p-2 rounded-full pointer-events-none">
+                        {isMuted ? <VolumeX className="w-6 h-6 text-white" /> : <Volume2 className="w-6 h-6 text-white" />}
                     </div>
                 )}
             </div>

@@ -48,8 +48,8 @@ const AnimatedTabs = ({
           </button>
         ))}
       </div>
-
-      <div className="p-6 bg-white shadow-xl rounded-2xl border border-gray-100 min-h-[300px]">
+        
+      <div className="p-6 bg-white shadow-xl rounded-2xl border border-gray-100 min-h-75">
         {tabs.map(
           (tab) =>
             activeTab === tab.id && (
