@@ -1,6 +1,6 @@
 # VETPET - Veterinary Clinic Website / Sitio Web Clínica Veterinaria
 
-## 🇬🇧 English
+## English
 
 Welcome to the **VETPET** repository! This is a web application designed for my dad's veterinary clinic, built to showcase services, facilities, and provide information to pet owners.
 
@@ -46,7 +46,7 @@ This project is organized as a monorepo with the following structure:
 
 ---
 
-## 🇪🇸 Español
+## Español
 
 ¡Bienvenido al repositorio de **VETPET**! Esta es una aplicación web diseñada para una clínica veterinaria (el negocio de mi papá ❤️), construida para mostrar los servicios, instalaciones y proveer información a los dueños de mascotas.
 
