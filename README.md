@@ -6,15 +6,11 @@ Welcome to the **VETPET** repository! This is a web application designed for my 
 
 ### Project Structure
 
-This project is organized as a monorepo with the following structure:
-
--   **frontend/**: The user interface built with React, Vite, Tailwind CSS, and Framer Motion for animations.
--   **backend/**: The server-side logic (Node.js/TypeScript).
+This project is a single-page application (SPA) built with React and Vite.
 
 ### Tech Stack
 
 -   **Frontend:** React 19, Vite, Tailwind CSS 4, Framer Motion, GSAP, Lucide React.
--   **Backend:** Node.js, TypeScript, Express (implied).
 -   **Package Manager:** npm
 
 ### Getting Started
@@ -28,21 +24,12 @@ This project is organized as a monorepo with the following structure:
 2.  **Install dependencies:**
     ```bash
     npm install
-    cd frontend && npm install
-    cd ../backend && npm install
     ```
 
 3.  **Run the application:**
-    You can start the frontend and backend separately.
-
-    -   **Frontend:**
-        ```bash
-        npm run start:frontend
-        ```
-    -   **Backend:**
-        ```bash
-        npm run start:backend
-        ```
+    ```bash
+    npm run dev
+    ```
 
 ---
 
@@ -52,15 +39,11 @@ This project is organized as a monorepo with the following structure:
 
 ### Estructura del Proyecto
 
-Este proyecto está organizado como un monorepo con la siguiente estructura:
-
--   **frontend/**: La interfaz de usuario construida con React, Vite, Tailwind CSS y Framer Motion para animaciones.
--   **backend/**: La lógica del servidor (Node.js/TypeScript).
+Este proyecto es una aplicación de página única (SPA) construida con React y Vite.
 
 ### Tecnologías Utilizadas
 
 -   **Frontend:** React 19, Vite, Tailwind CSS 4, Framer Motion, GSAP, Lucide React.
--   **Backend:** Node.js, TypeScript, Express.
 -   **Gestor de Paquetes:** npm
 
 ### Comenzando
@@ -74,18 +57,9 @@ Este proyecto está organizado como un monorepo con la siguiente estructura:
 2.  **Instalar dependencias:**
     ```bash
     npm install
-    cd frontend && npm install
-    cd ../backend && npm install
     ```
 
 3.  **Ejecutar la aplicación:**
-    Puedes iniciar el frontend y el backend por separado.
-
-    -   **Frontend:**
-        ```bash
-        npm run start:frontend
-        ```
-    -   **Backend:**
-        ```bash
-        npm run start:backend
-        ```
+    ```bash
+    npm run dev
+    ```
